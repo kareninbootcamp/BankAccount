@@ -6,6 +6,7 @@ public class Account {
 	private String description;
 	private double balance;
 	
+	
 	//constructor
 		public Account(int id, String description){
 			this.id = id;
@@ -56,6 +57,9 @@ public class Account {
 		 this.id = anId;		
 	}
 	
+	public void  print(){
+		System.out.println("My balance is "+this.getBalance());
+	}
 	
 	//getter for description
 	String getDescription() {
