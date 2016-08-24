@@ -15,12 +15,12 @@ public class Savings extends Account { //Savings inherits from Account
 	}
 	//method that calculates amount of interest using the interest rate
 			//then the method deposits that amount into the savings account
-	public double CalcDepositInterest(int months){
+	public void CalcDepositInterest(int months){
 				
 	  double CalcDepostitInterest = (interestRate/12) * months*getBalance();
-						
-	return CalcDepostitInterest;
-			
+	  
+	  this.deposit(CalcDepostitInterest);						
+				
  }
 	public void  printDeposit(){
 		super.print();
